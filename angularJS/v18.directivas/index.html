@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html ng-app="miAppModule">
+ 
+  <head>
+      <meta charset="utf-8">
+      <title>Angular JS</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+      <script type="text/javascript" src="js/controller.js"></script>
+
+      <style type="text/css">
+        .circular {
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          display: inline-block;
+          }
+      </style>
+  </head>
+ 
+  <body ng-controller="miController">
+      <ul ng-cloak>
+        <li ng-repeat="r in repos">
+          <div class="circular" back-img="{{r.owner.avatar_url}}"></div>
+          {{r.name}}
+        </li>
+      </ul>
+  
+  </body>
+ 
+</html>

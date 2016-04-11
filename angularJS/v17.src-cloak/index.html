@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html ng-app="miAppModule">
+ 
+  <head>
+      <meta charset="utf-8">
+      <title>Angular JS</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+      <script type="text/javascript" src="js/controller.js"></script>
+     
+  </head>
+ 
+  <body ng-controller="miController">
+    <h1>Recuperar repositorios de GitHub</h1>
+    <p>
+      Introduce el nombre de usuario del que quiere recuperar sus repositorios y pulse obtener!.
+    </p>
+
+    <p>
+      <input ng-model="usuario"/> <button ng-click="obtener(usuario)";>obtener!</button>
+    </p>
+
+    <div ng-show="repos == null">
+      <p>No hay repositorios para el usuario <strong>{{usuario}}</strong></p>
+      <p>Pruebe con alguno de los siguientes ejemplos:</p>
+      <ul>
+        <li>codigofacilito</li>
+        <li>ruboweb</li>
+      </ul>
+    </div>
+
+    <div ng-show="repos.length > 0">
+      <p>Repositorios de <strong>{{usuario}}</strong> 
+      <ul ng-cloak>
+        <li ng-repeat="r in repos">
+          <img ng-src="{{r.owner.avatar_url}}" width="30px" height="30px" />
+          {{r.name}}
+        </li>
+      </ul>
+    </p>
+
+
+  
+  </body>
+ 
+</html>
