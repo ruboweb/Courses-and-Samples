@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html ng-app="miApp">
+ 
+  <head>
+  		<meta charset="utf-8">
+  		<title>AngularJS</title>
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+  <body ng-controller="miAppController">
+      <p><strong>Padre:</strong> {{$parent.nombre}}</p>
+      <p><strong>Hijo:</strong> {{nombre}}</p>
+
+      <div ng-controller="childMiAppController">
+        <p><strong>Hijo Controller Padre Padre:</strong> {{$parent.$parent.nombre}}</p>        
+        <p><strong>Hijo Controller Padre:</strong> {{$parent.nombre}}</p>
+        <p><strong>Hijo Controller:</strong> {{nombre}}</p>
+
+        <input type="text" ng-model="nombre" />
+        <input type="text" ng-model="$parent.nombre" />
+      </div>
+ 	</body>
+
+</html>

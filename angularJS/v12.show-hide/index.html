@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html ng-app="miAppModule">
+ 
+  <head>
+  		<meta charset="utf-8">
+  		<title>Hola Mundo en angular JS</title>
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+
+      <style type="text/css">
+        .animated {
+          opacity: 1;
+          max-height: auto;
+          overflow: hidden;
+          transition: all 2s;
+        }
+
+        .animated.ng-hide {
+          opacity: 0;
+          max-height: 0px !important;
+          display: block !important;
+        }
+      </style>
+	</head>
+ 
+  <body ng-controller="miController">
+    <h1>Posts de <a href="http://jsonplaceholder.typicode.com/posts">http://jsonplaceholder.typicode.com/posts</a></h1>
+    <div ng-show="loading">Cargando...</div>
+    <div ng-show="!loading && posts.length <= 0">No se encontraron resultados</div>
+    <div class="animated" ng-show="posts.length > 0" ng-repeat = "p in posts" >
+      <h2>{{p.title}}</h2>
+      <p>{{p.body}}</p>
+
+    </div> 
+ 	</body>
+ 
+</html>

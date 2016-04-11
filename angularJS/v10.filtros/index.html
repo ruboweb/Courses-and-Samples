@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="miApp">
+ 
+  <head>
+  		<meta charset="utf-8">
+  		<title>AngularJS</title>
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+  	<body ng-controller="miAppController">
+		<h2>Saludo sin filtro de quitar HMTL</h2>
+  		{{ saludo }}
+
+		<h2>Saludo con filtro de quitar HMTL</h2>
+  		{{ saludo | removeHtml }}
+
+  		<h2>Filtro json</h2>
+  		{{ jsonText | json }}
+
+  		<h2>Filtro currency</h2>
+  		{{ coste | currency: '€' }}
+
+  		<h2>Filtro date</h2>
+  		<ul>
+	  		<li><strong>Sin parametros:</strong>{{ now | date }}</li>
+	  		<li><strong>short:</strong> {{ now | date:'short' }}</li>
+			<li><strong>medium:</strong>{{ now | date: 'medium' }}</li>
+			<li><strong>yyyy-MM-dd HH:mm:ss Z:</strong> {{ now | date: 'yyyy-MM-dd HH:mm:ss Z' }}</li>
+			<li><a href="https://docs.angularjs.org/api/ng/filter/date">+Opciones</a></li>
+		</ul>
+ 	</body>
+</html>

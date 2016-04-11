@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html ng-app="miApp">
+ 
+  <head>
+  		<meta charset="utf-8">
+  		<title>AngularJS</title>
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+  	<body ng-controller="miAppController">
+    {{nombre}}
+ 	</body>
+
+  <button id="mi_boton">click!</button>
+  <button ng-click="nombre = 'mod'">click! 2</button>
+</html>
