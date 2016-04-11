@@ -1,31 +1,31 @@
 # Curso de angularJS
 --------------------
-Aprende a utilizar Angular para crear aplicaciones web cuya lógica reside fuertemente en el Frontend. 
-https://codigofacilito.com/
+**Nombre del curso:** Aprende a utilizar Angular para crear aplicaciones web cuya lógica reside fuertemente en el Frontend. 
+**Centro de formación:** https://codigofacilito.com/
 
 #### Contenido del curso
 
-1. INTRODUCCIÓN
-2. HOLA MUNDO
-3. PRIMER CONTROLADOR
-4. MÓDULOS
-5. TWO WAY DATA BINDING Y NG MODEL
-6. DEPENDENCY INJECTION
-7. AJAX CON $HTTP 1/2
-8. AJAX CON $HTTP 2/2
-9. CREAR UN TO DO LIST
-10. FILTERS
-11. $WATCH, $APPLY Y $DIGEST
-12. NG HIDE : NG SHOW
-13. $ROOTSCOPE Y CHILD CONTROLLERS
-14. FACTORIES
-15. SERVICES
-16. NG-EVENTS Y NG-CLASS
-17. NG SRC Y NG CLOAK
-18. CREAR DIRECTIVAS PARTE 1
-19. DIRECTIVAS PERSONALIZADAS PARTE 2
-20. NGROUTE (SPA APPS)
-21. PRÁCTICA FINAL 1/4
-22. PRÁCTICA FINAL ($RESOURCE) 2/4
-23. PRÁCTICA FINAL ($RESOURCE) 3/4
-24. PRÁCTICA FINAL ($RESOURCE,$LOCATION) 4/4
+1. Introducción
+2. Hola mundo
+3. Primer controlador
+4. Módulos
+5. Two way data binding y ng-model
+6. Dependency injection
+7. Ajax con $http 1/2
+8. Ajax con $http 2/2
+9. Crear un to do-list
+10. Filters
+11. $watch, $apply y $digest
+12. ng-hide y ng-show
+13. $rootscope y child controllers
+14. Factories
+15. Services
+16. ng-events y ng-class
+17. ng-src y ng-cloak
+18. Crear directivas 1/2
+19. Directivas personalizadas parte 2/2
+20. ngroute (spa apps)
+21. Práctica final 1/4
+22. Práctica final ($resource) 2/4
+23. Práctica final ($resource) 3/4
+24. Práctica final ($resource, $location) 4/4
