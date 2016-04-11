@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="miAppModule">
+ 
+	<head>
+  		<meta charset="utf-8">
+  		<title>Hola Mundo en angular JS</title>
+
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    	<script type="text/javascript" src="js/controller.js"></script>
+	</head>
+ 
+	<body ng-controller="miController">
+		<p>{{"Hola " + nombre}}</p>
+
+		<p>
+		Comentario: <input type="text" ng-model="nuevoComentario.comentario" /></p>
+
+		<p>
+		Autor: <input type="text" ng-model="nuevoComentario.username" />
+    	</p>
+
+    	<p>
+    		<button ng-click="crearComentario()">Enviar</button>
+    	</p>
+
+   		<h1>Comentarios</h1>
+   		<ul>
+   			<li ng-repeat="c in comentarios">
+   			{{c.comentario}} de: <strong>{{c.username}}</strong>
+   			</li>
+   		</ul>
+  	</body>
+ 
+</html>
